@@ -1,111 +1,119 @@
 # Sentiment and Lexical Analysis using Web Scraping
 
-This project performs **sentiment analysis and lexical analysis** on text data collected from the web. It automates the process of scraping content, cleaning and processing text, and generating sentiment-based insights using natural language processing techniques.
+## Overview
 
-The system is designed to work on real-world unstructured text and can be extended for research, analytics, or NLP-based applications.
+This project performs **sentiment analysis and lexical analysis** on textual data collected from web sources. It automates the process of scraping content, cleaning and preprocessing text, and generating sentiment-based insights using natural language processing techniques.
 
----
-
-## 🔍 Project Overview
-
-The project performs the following steps:
-
-1. **Web Scraping**
-   - Extracts textual content from web pages using HTTP requests and HTML parsing.
-   - Supports structured extraction from multiple URLs.
-
-2. **Text Preprocessing**
-   - Cleans raw text by removing noise such as punctuation, stopwords, and special characters.
-   - Normalizes text for accurate downstream analysis.
-
-3. **Sentiment Analysis**
-   - Uses lexicon-based sentiment scoring to classify text as positive, negative, or neutral.
-   - Computes sentiment intensity based on word-level polarity.
-
-4. **Lexical Analysis**
-   - Calculates linguistic metrics such as word count, polarity score, and frequency distribution.
-   - Helps understand writing style, tone, and content structure.
-
-5. **Output Generation**
-   - Saves processed results to structured files for analysis and visualization.
+The system is designed for real-world unstructured text and can be extended for research, analytics, or NLP-based applications.
 
 ---
 
-## 📁 Project Structure
+## Objectives
 
+- Extract textual content from web pages  
+- Clean and normalize raw text  
+- Perform sentiment and lexical analysis  
+- Generate structured outputs for analysis and modeling  
+
+---
+
+## System Workflow
+
+1. **Web Scraping**  
+   Extracts textual content from web pages using HTTP requests and HTML parsing.
+
+2. **Text Preprocessing**  
+   Removes punctuation, stopwords, and irrelevant characters to normalize text.
+
+3. **Sentiment Analysis**  
+   Applies lexicon-based techniques to compute sentiment polarity.
+
+4. **Lexical Analysis**  
+   Computes word frequency and lexical statistics.
+
+5. **Output Generation**  
+   Stores processed results in structured files for further use.
+
+---
+
+## Project Structure
+
+```
 Sentiment_and_Lexical_Analysis_using_Web_Scraping/
 │
-├── Code.py # Main script for scraping and analysis
-├── Input.xlsx # Input URLs or text sources
-├── Output.xlsx # Final output with sentiment and lexical metrics
-├── positive.txt # Positive sentiment lexicon
-├── negative.txt # Negative sentiment lexicon
-├── Stop_word.txt # Stopword list
-└── README.md # Project documentation
-
-yaml
-Copy code
+├── Code.py                  # Main script for scraping and analysis
+├── Input.xlsx               # Input URLs or raw text
+├── Output.xlsx              # Output with sentiment and lexical metrics
+├── positive.txt             # Positive sentiment lexicon
+├── negative.txt             # Negative sentiment lexicon
+├── Stop_word.txt            # Stopword list
+└── README.md                # Project documentation
+```
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
-Install the required Python libraries:
+Install dependencies using:
 
 ```bash
 pip install pandas requests beautifulsoup4 nltk openpyxl
-🚀 How to Run
-Clone the repository:
+```
 
-bash
-Copy code
+---
+
+## How to Run
+
+1. Clone the repository:
+```bash
 git clone https://github.com/SurajSingh53/Sentiment_and_Lexical_Analysis_using_Web_Scraping.git
-Navigate to the project directory:
+```
 
-bash
-Copy code
+2. Navigate to the project directory:
+```bash
 cd Sentiment_and_Lexical_Analysis_using_Web_Scraping
-Run the script:
+```
 
-bash
-Copy code
+3. Run the script:
+```bash
 python Code.py
-View the results in Output.xlsx.
+```
 
-📊 Output Details
-The generated output file includes:
+4. View the results in:
+```
+Output.xlsx
+```
 
-Cleaned textual content
+---
 
-Polarity and sentiment scores
+## Output Description
 
-Word counts and lexical statistics
+The generated output includes:
+- Cleaned textual content  
+- Sentiment polarity scores  
+- Word frequency and lexical metrics  
 
-Aggregated sentiment indicators
+This data can be used for sentiment trend analysis, NLP research, or dataset preparation.
 
-This output can be used for:
+---
 
-Sentiment trend analysis
+## Use Cases
 
-Text analytics research
+- Customer feedback analysis  
+- Opinion mining and sentiment research  
+- NLP experimentation and prototyping  
 
-NLP experimentation and model building
+---
 
-🧠 Use Cases
-Analyzing customer reviews or feedback
+## Notes
 
-Studying sentiment in news articles or blogs
+- Ensure compliance with website scraping policies.
+- Accuracy depends on data quality and preprocessing logic.
+- Intended for educational and research use.
 
-Academic NLP experiments
+---
 
-Preparing datasets for machine learning models
+## License
+Nothing really tbh...:)
 
-⚠️ Notes
-Ensure compliance with website scraping policies (robots.txt).
-
-Sentiment results depend on lexicon quality and preprocessing steps.
-
-The system is designed for educational and analytical purposes.
-
-📜 License
-This project is open for educational and research use.
+This project is intended for educational and research purposes.
